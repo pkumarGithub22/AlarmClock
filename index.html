@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- this container or wrapper for box. -->
+    <div class="wrapper">
+        <div class="heading">Alarm clock </div>
+
+
+        <div class="current_time" id="current_time"></div>
+
+        <form class="alarm-form">
+            <div>
+                <select name="hours" id="hours" required></select>
+                <select name="minutes" id="minutes" required></select>
+                <select name="seconds" id="seconds" required></select>
+                <select name="am-pm" id="am-pm" required>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+        </form>
+
+        <!-- btn all class for -->
+        <div class="btn-flex" style="display: flex;align-items: center;gap:10px;">
+
+            <!-- set btn alarm -->
+            <button class="btn" id="submitButton" type="submit">Set Alarm</button>
+
+            <!-- stop alarm btn -->
+            <button class="btn" id="stopButton">Stop Alarm</button>
+        </div>
+
+        <!-- list for alarms which are invisible -->
+        <div class="set-alarm-container">
+            <!-- alarms title -->
+            <div class="set-alarm-container-title">
+                UPCOMING ALARM
+            </div>
+            <hr>
+            <!-- delete button for alarms -->
+            <div class="alarms-container" id="alarms-container"></div>
+        </div>
+    </div>
+
+    <!-- link javascript file with HTML file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
